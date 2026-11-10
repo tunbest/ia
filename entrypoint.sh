@@ -1,11 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 
 ollama serve &
 
-echo "Attente du serveur Ollama..."
 sleep 15
 
-echo "Téléchargement du modèle..."
-ollama pull qwen3:14b
+ollama pull llama3.2:3b
 
 wait
